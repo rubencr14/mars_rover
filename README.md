@@ -1,6 +1,8 @@
 # Mars Rover Project
 It is a programming project that solves the problem posed in https://katalyst.codurance.com/mars-rover
 
+**FOR FULL DOCUMENTATION CHECK HTML FILES IN DOCS/BUILD/HTML. YOU CAN DOWNLOAD AND CLICK INDEX.HTML**
+
 This is a basic documentation of rovers functionality. To be able to execute all the functions and make Mars Rovers walk and explore 
 we must make sure we have all the required libraries installed:
 
