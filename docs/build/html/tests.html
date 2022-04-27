@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tests package &mdash; rovers 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="mars module" href="mars.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rovers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="config.html">config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="draw.html">draw module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">errors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mars.html">mars module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">tests package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tests.test_rovers">tests.test_rovers module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rovers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">src</a> &raquo;</li>
+        
+      <li>tests package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tests.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="module-tests">
+<span id="tests-package"></span><h1>tests package<a class="headerlink" href="#module-tests" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-tests.test_rovers">
+<span id="tests-test-rovers-module"></span><h2>tests.test_rovers module<a class="headerlink" href="#module-tests.test_rovers" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="tests.test_rovers.move_to_obstacles">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">move_to_obstacles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">instructions</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.move_to_obstacles" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for creating an obstacle in a specific position to 
+later test if mars rovers stops when there is an obstacle in front.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>instructions</strong> (<em>string</em>) – A list of characters containing instructions for the robot</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.moves">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">moves</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">instructions</span></em>, <em class="sig-param"><span class="n">position</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.moves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given the instructions and the expected result this function
+asserts that the computed result by movement corresponds
+to the expected one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>instructions</strong> (<em>string</em>) – A list of characters containing instructions for the robot</p></li>
+<li><p><strong>position</strong> – String containing the position. e.g. 2:3:N</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.rotation">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">rotation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">instructions</span></em>, <em class="sig-param"><span class="n">result</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given the instructions and the expected result this function
+asserts that the computed result by rotation corresponds
+to the expected one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>instructions</strong> (<em>string</em>) – A list of characters containing instructions for the robot</p></li>
+<li><p><strong>result</strong> (<em>string</em>) – This is a character of the orientation of the rovers</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_left_rotation_east">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_left_rotation_east</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_left_rotation_east" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after one rotation to the left,
+starting from (0,0,N), it faces West (W).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_left_rotation_north">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_left_rotation_north</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_left_rotation_north" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after four rotations to the left,
+starting from (0,0,N), it faces North (N).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_left_rotation_south">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_left_rotation_south</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_left_rotation_south" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after two rotations to the left,
+starting from (0,0,N), it faces South (S).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_left_rotation_west">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_left_rotation_west</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_left_rotation_west" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after three rotations to the left,
+starting from (0,0,N), it faces East (E).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_move">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_move</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures the combination of movements and rotations.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_move_with_wrap_around">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_move_with_wrap_around</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_move_with_wrap_around" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test checks if the wrap around works properly
+given instructions that force the mars rovers to go
+outside the grid.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_right_rotation_east">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_right_rotation_east</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_right_rotation_east" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after rotation to the right,
+starting from (0,0,N), it faces East (E).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_right_rotation_north">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_right_rotation_north</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_right_rotation_north" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after four rotations to the right,
+starting from (0,0,N), it faces North (N).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_right_rotation_south">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_right_rotation_south</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_right_rotation_south" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after two rotations to the right,
+starting from (0,0,N), it faces South (S).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_right_rotation_west">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_right_rotation_west</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_right_rotation_west" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test assures that after three rotations to the right,
+starting from (0,0,N), it faces West (W).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tests.test_rovers.test_stop_if_obstacle">
+<code class="sig-prename descclassname">tests.test_rovers.</code><code class="sig-name descname">test_stop_if_obstacle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_rovers.test_stop_if_obstacle" title="Permalink to this definition">¶</a></dt>
+<dd><p>This test checks if the mars rovers stops when it finds an obstacle
+in the next cell.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="mars.html" class="btn btn-neutral float-left" title="mars module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, rubencr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

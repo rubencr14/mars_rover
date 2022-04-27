@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to Mars Rovers’ documentation! &mdash; rovers 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="src" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> rovers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">src</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">rovers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to Mars Rovers’ documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="welcome-to-mars-rovers-documentation">
+<h1>Welcome to Mars Rovers’ documentation!<a class="headerlink" href="#welcome-to-mars-rovers-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Author: Rubén Cañadas Rodríguez</p>
+<p>Date: 27-04-2022</p>
+<p>This is a basic documentation of rovers functionality. To be able to execute all the functions and make Mars Rovers walk and explore
+we must make sure we have all the required libraries installed:</p>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>pip install -r requirements.txt
+</pre></div>
+</td></tr></table></div>
+<p>Once we have the libraries installed we can start. To move the rovers we only have to introduce in the terminal
+the next command:</p>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>python src/main.py
+</pre></div>
+</td></tr></table></div>
+<p>Then introduce the movements the Rovers has to do:</p>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>Write the instructions <span class="k">for</span> rovers e.g MMRMMLM:
+</pre></div>
+</td></tr></table></div>
+<p>When you introduce the movements, Mars Rovers will perform them and a plot of its path will appear:</p>
+<a class="reference internal image-reference" href="_static/images/rovers_path.png"><img alt="rovers path image" src="_static/images/rovers_path.png" style="width: 800px;" /></a>
+<p>We can change some parameters in the config.py file inside the src directory. For example, we can
+set the number of obstacles in the grid, the size of the grid and also if we want to create the draw
+of the rovers path.</p>
+<p>Inside the src directory we find the tests directory. This are basic integration tests to check
+the proper behavior of the Rovers in the grid. Unit tests for checking the functionality of each method could also be done
+in future work. If pytest is installed we only have to run the next command:</p>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span>python <span class="nv">pytest</span>
+
+<span class="o">=============================</span> <span class="nb">test</span> session <span class="nv">starts</span> <span class="o">==============================</span>
+platform darwin -- Python <span class="m">3</span>.10.0, pytest-7.1.2, pluggy-1.0.0
+rootdir: /Users/rubencr/Desktop/rovers
+plugins: Faker-13.3.4
+collected <span class="m">10</span> items
+
+src/tests/test_rovers.py ..........                                      <span class="o">[</span><span class="m">100</span>%<span class="o">]</span>
+
+<span class="o">==============================</span> <span class="m">11</span> passed in <span class="m">1</span>.70s <span class="o">==============================</span>
+</pre></div>
+</td></tr></table></div>
+<p>This means that the tests have passed properly without any failure. We also can control rovers movement from python
+importing the corresponding modules as follows:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mars</span> <span class="kn">import</span> <span class="n">Grid</span><span class="p">,</span> <span class="n">Rovers</span><span class="p">,</span> <span class="n">Obstacles</span>
+<span class="kn">from</span> <span class="nn">config</span> <span class="kn">import</span> <span class="n">NUMBER_OF_OBSTACLES</span><span class="p">,</span> <span class="n">GRID_SIZE</span>
+
+<span class="n">instructions</span> <span class="o">=</span> <span class="s1">&#39;MMRMMLM&#39;</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">Grid</span><span class="p">(</span><span class="n">GRID_SIZE</span><span class="p">,</span> <span class="n">GRID_SIZE</span><span class="p">)</span>
+<span class="n">obstacles</span> <span class="o">=</span> <span class="n">Obstacles</span><span class="p">()</span>
+<span class="n">random_obstacles</span> <span class="o">=</span> <span class="n">obstacles</span><span class="o">.</span><span class="n">create_obstacles_in_grid</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">NUMBER_OF_OBSTACLES</span><span class="p">)</span><span class="o">.</span><span class="n">get_obstacles_positions</span><span class="p">()</span>
+<span class="n">rovers</span> <span class="o">=</span> <span class="n">Rovers</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">instruction</span> <span class="ow">in</span> <span class="n">instructions</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">rovers</span><span class="o">.</span><span class="n">can_move</span><span class="p">():</span>
+      <span class="n">rovers</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">instruction</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">obstacles</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="k">break</span>
+</pre></div>
+</td></tr></table></div>
+</section>
+<section id="mathematical-concepts">
+<h1>Mathematical concepts<a class="headerlink" href="#mathematical-concepts" title="Permalink to this headline">¶</a></h1>
+<p>Rovers starts its journey in the position (0,0) facing north. It only moves cell from cell but it also can rotate.
+To model the Rovers rotation we can use rotation matrices. Rovers has one direction vector. At the beginning, as it is
+facing north, the direction vector is (0,1). According to the rotation commands (R or L) we will apply rotation matrices to this
+vector. This will allow the Rovers to rotate. The following is the rotation matrix clockwise (right rotation -&gt; R) and its transpose
+will be the anti-clockwise rotation matrix (left rotation -&gt; L). In this case, for rovers rotation, the angle is 90º.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">rotation</span> <span class="pre">matrix:</span></code></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}R_{\theta} = \begin{bmatrix}
+         cos\theta &amp; -sin\theta \\
+         sin\theta &amp; cos\theta \\
+   \end{bmatrix}\end{split}\]</div>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">rotation</span> <span class="pre">matrix:</span></code></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}R_{\theta}^T = \begin{bmatrix}
+         cos\theta &amp; sin\theta \\
+         -sin\theta &amp; cos\theta \\
+   \end{bmatrix}\end{split}\]</div>
+</div></blockquote>
+<p>Apart from the rotation, we also have the movement controlled by M command. The movement simply makes the rovers move
+to the next cell. The movement is defined by the direction vector. Depending on what direction ther rovers is facing it will have one value or another:</p>
+<p>North = (0, 1)</p>
+<p>South = (0, -1)</p>
+<p>East = (1, 0)</p>
+<p>West = (-1, 0)</p>
+<p>To obtain the next position we only have to sum the direction vector to the current position of the rovers:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+         x_1 &amp; x_2 \\
+   \end{bmatrix} + \begin{bmatrix}
+         v_1 &amp; v_2 \\
+   \end{bmatrix}\end{split}\]</div>
+<p>Rotations and Movements is all we need to make Mars Rovers move in the grid properly so it can explore the new planet
+and send images and information back to the earth.</p>
+</section>
+<section id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config.html">config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="draw.html">draw module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">errors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mars.html">mars module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules.html" class="btn btn-neutral float-right" title="src" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, rubencr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

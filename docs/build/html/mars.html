@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>mars module &mdash; rovers 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tests package" href="tests.html" />
+    <link rel="prev" title="errors module" href="errors.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rovers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="config.html">config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="draw.html">draw module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">errors module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">mars module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rovers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">src</a> &raquo;</li>
+        
+      <li>mars module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/mars.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="module-mars">
+<span id="mars-module"></span><h1>mars module<a class="headerlink" href="#module-mars" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="mars.Grid">
+<em class="property">class </em><code class="sig-prename descclassname">mars.</code><code class="sig-name descname">Grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">m</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">n</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mars.Grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The Grid class will contain all the information of the plateau where Rovers can move. 
+This will be used to check if Rovers is inside the grid or not.</p>
+<dl class="py method">
+<dt id="mars.Grid.get_grid">
+<code class="sig-name descname">get_grid</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; numpy.array<a class="headerlink" href="#mars.Grid.get_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns the grid as an object of numpy array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>grid</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy array object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Grid.shape">
+<em class="property">property </em><code class="sig-name descname">shape</code><a class="headerlink" href="#mars.Grid.shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>This property method returns a tuple of the shape of the grid m X n</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dimensions of the grid</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="mars.Obstacles">
+<em class="property">class </em><code class="sig-prename descclassname">mars.</code><code class="sig-name descname">Obstacles</code><a class="headerlink" href="#mars.Obstacles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class is the responsible for creating new obstacles inside the grid
+and checking if a certain vector position (X,Y) is found inside the grid.</p>
+<dl class="py method">
+<dt id="mars.Obstacles.add_custom_obstacle">
+<code class="sig-name descname">add_custom_obstacle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">custom_obstacle_position</span><span class="p">:</span> <span class="n">tuple</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mars.Obstacles.add_custom_obstacle" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for adding a custom obstacle position and not randomly. This
+method is mainly for later testing the rovers behavior against obstacles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>custom_obstacle_position</strong> (<em>tuple of integers</em>) – This is a tuple of the position coordinates of the custom obstacle</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It returns the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Obstacles instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Obstacles.create_obstacles_in_grid">
+<code class="sig-name descname">create_obstacles_in_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">grid</span></em>, <em class="sig-param"><span class="n">num</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mars.Obstacles.create_obstacles_in_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method creates random (num) obstacles inside the grid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>grid</strong> (<a class="reference internal" href="#mars.Grid" title="mars.Grid"><em>Grid</em></a>) – This is the object created for the custom grid</p></li>
+<li><p><strong>num</strong> (<em>integer</em>) – This is the number of obstacles created inside the grid</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns the object instanciated</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#mars.Obstacles" title="mars.Obstacles">Obstacles</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Obstacles.get_obstacles_positions">
+<code class="sig-name descname">get_obstacles_positions</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#mars.Obstacles.get_obstacles_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the getter method for checking the list of obstacle positions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Returns the list of tuples with position coordinates of the obstacles</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of tuples of integers (coordinates in the grid)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Obstacles.has">
+<code class="sig-name descname">has</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pos</span><span class="p">:</span> <span class="n">numpy.array</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#mars.Obstacles.has" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methodChecks if there is any obstacle in position pos
+Returns True if there is obstacle else false</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pos</strong> (<em>numpy array object</em>) – this is the position where we want to know if there is an obstacle or not</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns True if there is an obstacle in that position. Else returns False.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="mars.Rovers">
+<em class="property">class </em><code class="sig-prename descclassname">mars.</code><code class="sig-name descname">Rovers</code><a class="headerlink" href="#mars.Rovers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This is the Rovers class. This class contains all the information about the state and
+actions that Rovers can carry out. Rovers has two main states, the position where it can be 
+found in a certain moment and the direction it is pointing at. It has a method move that can receive
+either rotation instructions (L,R) or moving instructions (M). To determine the position and the direction
+it is facing we will use basic algebra on vectors mathematical objects. By applying matrix rotations we will obtain
+the direction where it points at. By adding the direction vector to the position vector we will obtain the next 
+position in the grid.</p>
+<dl class="py method">
+<dt id="mars.Rovers.can_move">
+<code class="sig-name descname">can_move</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#mars.Rovers.can_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is for knowing if rovers has found any obstacle and cannot move.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if it can move, False if it cannot move anymore</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Rovers.direction">
+<em class="property">property </em><code class="sig-name descname">direction</code><a class="headerlink" href="#mars.Rovers.direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the property method of rovers direction. It returns N,S,W,E</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>direction where rovers is facing at current moment</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Rovers.history">
+<em class="property">property </em><code class="sig-name descname">history</code><a class="headerlink" href="#mars.Rovers.history" title="Permalink to this definition">¶</a></dt>
+<dd><p>This property method returns the historical positions where Rovers
+has been during its exploration in Mars. This will be later used for
+drawing the path that it has followed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of positions</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Rovers.move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">command</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">grid</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#mars.Grid" title="mars.Grid">mars.Grid</a></span></em>, <em class="sig-param"><span class="n">obstacles</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mars.Rovers.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the move method of the Rovers. If the command is move (‘M’). The robot
+checks if it can move or if there is any obstacle. If there is an obstacle the can_move
+object attribute is set to False and the Robot stays in the previous positions. However,
+if it can move it checks if the next position is in the grid or not. If the next position is not on the 
+MxN grid then it wraps around and obtains a positions that exists in the grid. Then. rovers move to the 
+next position. If the command is ‘R’ or ‘L’ means the robot has to rotate. If so, rotation operation
+on the direction vector is applied and the direction state (N,S,E,W) is updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>command</strong> (<em>string</em>) – This is the command: move or rotate. Posible options are M (move), R (rotate right), L (rotate left)</p></li>
+<li><p><strong>grid</strong> (<a class="reference internal" href="#mars.Grid" title="mars.Grid"><em>Grid</em></a>) – This is the grid object of the grid created</p></li>
+<li><p><strong>obstacles</strong> (<a class="reference internal" href="#mars.Obstacles" title="mars.Obstacles"><em>Obstacles</em></a>) – This is an instance of the Obstacles class</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Rovers.position">
+<em class="property">property </em><code class="sig-name descname">position</code><a class="headerlink" href="#mars.Rovers.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>This property method returns the position of the rovers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of position coordinates</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mars.Rovers.vector">
+<em class="property">property </em><code class="sig-name descname">vector</code><a class="headerlink" href="#mars.Rovers.vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>This property method returns the direction pointer.
+(0,-1) –&gt; points South (S)
+(0, 1) –&gt; points North (N)
+(1, 0) –&gt; points East (E)
+(-1, 0) –&gt; points West (W)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Direction Vector (X,Y)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy array object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tests.html" class="btn btn-neutral float-right" title="tests package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="errors.html" class="btn btn-neutral float-left" title="errors module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, rubencr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
