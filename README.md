@@ -60,4 +60,4 @@ from mars import Grid, Rovers, Obstacles
       else:
          break
 ```
-
+For more information you can check docs/build/html files for full documentation.
