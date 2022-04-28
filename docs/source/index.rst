@@ -51,7 +51,7 @@ in future work. If pytest is installed we only have to run the next command:
 .. code-block:: bash
    :linenos:
 
-   python pytest
+   pytest
 
    ============================= test session starts ==============================
    platform darwin -- Python 3.10.0, pytest-7.1.2, pluggy-1.0.0
