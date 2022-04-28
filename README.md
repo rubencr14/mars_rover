@@ -3,6 +3,12 @@ It is a programming project that solves the problem posed in https://katalyst.co
 
 **FOR FULL DOCUMENTATION CHECK HTML FILES IN DOCS/BUILD/HTML. YOU CAN DOWNLOAD AND CLICK INDEX.HTML**
 
+**AUTHOR: RUBÉN CAÑADAS RODRÍGUEZ**
+
+**DATE: 27-04-2022**
+
+**PYTHON VERSION: 3.10.0**
+
 This is a basic documentation of rovers functionality. To be able to execute all the functions and make Mars Rovers walk and explore 
 we must make sure we have all the required libraries installed:
 
@@ -31,7 +37,7 @@ the proper behavior of the Rovers in the grid. Unit tests for checking the funct
 in future work. If pytest is installed we only have to run the next command:
 
 ```console
-python pytest
+pytest
 
    ============================= test session starts ==============================
    platform darwin -- Python 3.10.0, pytest-7.1.2, pluggy-1.0.0
