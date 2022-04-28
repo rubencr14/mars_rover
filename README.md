@@ -28,7 +28,7 @@ Write the instructions for rovers e.g MMRMMLM:
 ```
 When you introduce the movements, Mars Rovers will perform them and a plot of its path will appear.
 
-We can change some parameters in the config.py file inside the src directory. For example, we can 
+**We can change some parameters in the config.py file inside the src directory.** For example, we can 
 set the number of obstacles in the grid, the size of the grid and also if we want to create the draw
 of the rovers path.
 
